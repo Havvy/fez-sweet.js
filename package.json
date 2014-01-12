@@ -1,0 +1,27 @@
+{
+  "name": "fez-sweet.js",
+  "version": "0.5.0",
+  "description": "Fez Plugin for Sweet.js Compilation",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Havvy/fez-sweet.js.git"
+  },
+  "keywords": [
+    "fez",
+    "sweet.js"
+  ],
+  "author": "Ryan Scheel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Havvy/fez-sweet.js/issues"
+  },
+  "homepage": "https://github.com/Havvy/fez-sweet.js",
+  "dependencies": {
+    "bluebird": "~0.11.x",
+    "sweet.js": "~0.4.x"
+  }
+}
