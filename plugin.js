@@ -8,11 +8,23 @@ module.exports = function (options) {
         return SweetJS.loadNodeModule(cwd, modulename);
     });
 
+    var options = {
+        modules: modules,
+        readableNames: options.readableNames,
+        escodegen: options.escodegen || {
+            format: {
+                indent: {
+                    style: Array(formatIndent + 1).join(' ')
+                }
+            }
+        }
+    };
+
     function sjs(promise) {
         return promise
         .then(function (input) {
             var src = input.toString();
-            var outfile = SweetJS.compile(src, {modules: modules}).code;
+            var outfile = SweetJS.compile(src, options).code;
             return outfile;
         });
     }
