@@ -2,7 +2,7 @@ var SweetJS = require('sweet.js');
 var Promise = require('bluebird');
 var inspect = require('util').inspect;
 
-module.exports = function (options) {
+module.exports = function SweetJS (options) {
     var cwd = process.cwd();
     var modules = (options.modules || []).map(function (modulename) {
         return SweetJS.loadNodeModule(cwd, modulename);
@@ -11,13 +11,7 @@ module.exports = function (options) {
     var options = {
         modules: modules,
         readableNames: options.readableNames,
-        escodegen: options.escodegen || {
-            format: {
-                indent: {
-                    style: Array(formatIndent + 1).join(' ')
-                }
-            }
-        }
+        escodegen: options.escodegen || undefined
     };
 
     function sjs(promise) {

@@ -1,6 +1,6 @@
 {
   "name": "fez-sweet.js",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Fez Plugin for Sweet.js Compilation",
   "main": "plugin.js",
   "scripts": {
@@ -22,6 +22,6 @@
   "homepage": "https://github.com/Havvy/fez-sweet.js",
   "dependencies": {
     "bluebird": "~0.11.x",
-    "sweet.js": "~0.4.x"
+    "sweet.js": "~0.4.1"
   }
 }
